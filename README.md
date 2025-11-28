@@ -1,85 +1,52 @@
-# 🎮 Rock, Paper, Scissors Arena
+🐍 Python Word Scramble Game
 
-A fully interactive Rock, Paper, Scissors game built entirely in Python using Streamlit. This application features real-time scoring, match history tracking with Pandas, and Lottie animations for a modern user experience.
+A simple, interactive word scrambling game implemented in Python. Test your vocabulary and deductive skills by unscrambling a randomly selected word from a predefined list.
 
 ✨ Features
 
-Interactive Gameplay: Clean UI with buttons for Rock, Paper, and Scissors.
+Random Word Selection: A secret word is chosen at random from a diverse list.
 
-Real-Time Feedback: Instant win/loss/tie feedback with visual cues (Balloons for wins!).
+Efficient Scrambling: Uses Python's built-in random.sample function to ensure the word is thoroughly mixed.
 
-Data Analytics: * Tracks every move in a session using Pandas.
+Attempt Tracking: Keeps count of how many guesses it takes to solve the puzzle.
 
-Displays a live data table of match history.
+Simple Command Line Interface: Easy to run and play in any terminal environment.
 
-Visualizes win distribution with a bar chart.
+⚙️ How to Run
 
-Animations: Integrated Lottie Files for engaging robot animations.
+Prerequisites
 
-Customization: Sidebar settings to set player names.
+You only need Python 3 installed on your system.
 
-🛠️ Tech Stack
+1. Save the Code
 
-Python 3.8+ - The core programming language.
+Save the provided code into a file named word_scramble.py.
 
-Streamlit - For the web interface and interactivity.
+2. Run from Terminal
 
-Pandas - For data handling and game history logs.
+Open your terminal or command prompt, navigate to the directory where you saved the file, and execute the following command:
 
-Streamlit-Lottie - For rendering JSON animations.
-
-🚀 How to Run Locally
-
-Follow these steps to get the game running on your machine:
-
-1. Clone the Repository (or download files)
-
-git clone [https://github.com/your-username/rps-project.git](https://github.com/your-username/rps-project.git)
-cd rps-project
+game.py
 
 
-2. Install Dependencies
 
-Make sure you have Python installed. Then, install the required libraries:
+🕹️ Game Logic
 
-pip install -r requirements.txt
+Start: The game selects a secret word from its internal dictionary.
 
+Scramble: The scramble_word function shuffles the letters of the secret word.
 
-3. Run the App
+Prompt: The user is presented with the scrambled word and prompted for a guess.
 
-Launch the Streamlit server:
+Guessing: The user enters their guess. The game tracks the number of attempts.
 
-streamlit run app.py
+Win Condition: If the guess matches the secret word (case-insensitive), the game congratulates the player and reports the total attempts.
 
+Fail Condition: If the guess is incorrect, the player is prompted to try again.
 
-The game should automatically open in your default web browser at http://localhost:8501.
+🛠️ Customization
 
-📂 Project Structure
+To make the game more challenging or tailored, you can easily modify the word list within the word_scramble_game function:
 
-rps_project/
-├── app.py              # Main application logic and UI
-├── requirements.txt    # List of Python dependencies
-└── README.md           # Project documentation
-
-
-📸 Screenshots
-
-Note: Add a screenshot of your game here by placing an image in the folder and linking it, e.g., ![Game Screenshot](screenshot.png)
-
-🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Fork the Project
-
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-📝 License
-
-This project is open source and available for personal and educational use.
+    words = ["python", "programming", "challenge", "computer", "developer"]
+    # Change this list to your preferred words!
