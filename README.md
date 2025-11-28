@@ -1,8 +1,8 @@
-🐍 Python Word Scramble Game
-
+# 🐍 Python Word Scramble Game
+---
 A simple, interactive word scrambling game implemented in Python. Test your vocabulary and deductive skills by unscrambling a randomly selected word from a predefined list.
 
-✨ Features
+## ✨ Features
 
 Random Word Selection: A secret word is chosen at random from a diverse list.
 
@@ -12,7 +12,7 @@ Attempt Tracking: Keeps count of how many guesses it takes to solve the puzzle.
 
 Simple Command Line Interface: Easy to run and play in any terminal environment.
 
-⚙️ How to Run
+## ⚙️ How to Run
 
 Prerequisites
 
@@ -30,7 +30,7 @@ game.py
 
 
 
-🕹️ Game Logic
+## 🕹️ Game Logic
 
 Start: The game selects a secret word from its internal dictionary.
 
@@ -44,7 +44,7 @@ Win Condition: If the guess matches the secret word (case-insensitive), the game
 
 Fail Condition: If the guess is incorrect, the player is prompted to try again.
 
-🛠️ Customization
+## 🛠️ Customization
 
 To make the game more challenging or tailored, you can easily modify the word list within the word_scramble_game function:
 
